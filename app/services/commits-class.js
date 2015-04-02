@@ -17,4 +17,4 @@ class CommitsClass {
 
 CommitsClass.factory.$inject = ['$http'];
 
-export { CommitsClass };
+export default CommitsClass;
