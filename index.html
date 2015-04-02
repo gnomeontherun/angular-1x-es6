@@ -3,14 +3,21 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Angular 1.x</title>
+  <style type="text/css">
+    .half { width: 50%; float: left; }
+  </style>
 </head>
 <body>
 
-  <h1>Github Commits using Class</h1>
-  <github-commits-class user="angular" repo="angular"></github-commits-class>
+  <div class="half">
+    <h1>Github Commits using Class</h1>
+    <github-commits-class user="angular" repo="angular"></github-commits-class>
+  </div>
 
-  <h1>Github Commits using Prototypes</h1>
-  <github-commits-proto user="angular" repo="angular"></github-commits-proto>
+  <div class="half">
+    <h1>Github Commits using Prototypes</h1>
+    <github-commits-proto user="angular" repo="angular"></github-commits-proto>
+  </div>
 
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
