@@ -18,6 +18,10 @@ Clone the repo, install node modules, install jspm packages, and run gulp for de
 
 There are two versions of the `Commits` service, one implemented as a class (`app/services/commits-class.js`) and the other just as a function (`app/services/commits-proto.js`).
 
+You can review the two files with comments to see the implementation details.
+
 # Directives
 
 There are two versions of the `githubCommits` directive, one implemented as a class (`app/components/github-commits-class.js`) and the other just as a function (`app/components/github-commits-proto.js`).
+
+You can review the two files with comments to see the implementation details.
