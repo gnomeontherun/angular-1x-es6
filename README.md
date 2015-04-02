@@ -4,6 +4,10 @@ The goal is to better understand the use of classes and how it can impact the de
 
 This app is not intended to be representative of quality application structure, but designed to more quickly compare the same concepts with different patterns.
 
+### Help wanted
+
+As I experiment, I want to capture different patterns and approaches. If you have others, please submit code or even just open an issue. It would also great to work on how to use other tooling besides jspm.
+
 ### Get started
 
 Clone the repo, install node modules, install jspm packages, and run gulp for dev server.
