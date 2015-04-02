@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Angular 1.x</title>
+</head>
+<body>
+
+  <h1>Github Commits using Class</h1>
+  <github-commits-class user="angular" repo="angular"></github-commits-class>
+
+  <h1>Github Commits using Prototypes</h1>
+  <github-commits-proto user="angular" repo="angular"></github-commits-proto>
+
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+  System.import('./app/app');
+</script>
+
+</body>
+</html>
