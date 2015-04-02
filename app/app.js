@@ -1,9 +1,14 @@
 import angular from 'angular';
+
 import { GithubCommitsClass } from 'app/components/github-commits-class';
+import { CommitsClass } from 'app/services/commits-class';
+
 import GithubCommitsProto from 'app/components/github-commits-proto';
-import { Commits } from 'app/services/commits';
+import CommitsProto from 'app/services/commits-proto';
 
 angular.module('App', [])
-  .factory('Commits', Commits.factory)
+  .factory('CommitsClass', CommitsClass.factory)
   .directive('githubCommitsClass', GithubCommitsClass.factory)
+
+  .factory('CommitsProto', CommitsProto)
   .directive('githubCommitsProto', GithubCommitsProto)

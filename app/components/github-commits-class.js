@@ -1,9 +1,7 @@
 'use strict';
 
 class GithubCommitsClass {
-  constructor(Commits) {
-    this.Commits = Commits;
-
+  constructor() {
     this.restrict = 'E';
     this.scope = {
       user: '@',
@@ -12,17 +10,15 @@ class GithubCommitsClass {
     this.template = '<ul><li ng-repeat="commit in commits">{{commit.commit.author.name}}: {{commit.commit.message}}</li></ul>';
   }
 
-  controller($scope, Commits) {
-    Commits.get().then(data => {
+  controller($scope, CommitsClass) {
+    CommitsClass.get().then(data => {
       $scope.commits = data;
     });
   }
 
-  static factory(Commits) {
-    return new GithubCommitsClass(Commits);
+  static factory() {
+    return new GithubCommitsClass();
   }
 }
-
-GithubCommitsClass.factory.$inject = ['Commits'];
 
 export { GithubCommitsClass };

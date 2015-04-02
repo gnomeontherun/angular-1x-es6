@@ -8,8 +8,9 @@ function GithubCommitsProto() {
       user: '@',
       repo: '@'
     },
-    controller: function($scope, Commits) {
-      Commits.get().then(function(data) {
+    controller: function($scope, CommitsProto) {
+      console.log(CommitsProto);
+      CommitsProto.get().then(function(data) {
         $scope.commits = data;
       });
     },

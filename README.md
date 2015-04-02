@@ -2,6 +2,8 @@ This repo is a test of several patterns and approaches for writing Angular 1.x a
 
 The goal is to better understand the use of classes and how it can impact the development process. Secondary goals are to understand how different tooling systems work.
 
+This app is not intended to be representative of quality application structure, but designed to more quickly compare the same concepts with different patterns.
+
 ### Get started
 
 Clone the repo, install node modules, install jspm packages, and run gulp for dev server.
@@ -14,8 +16,8 @@ Clone the repo, install node modules, install jspm packages, and run gulp for de
 
 # Services
 
-There is only one service currently, implemented as a class. Notice the number of times we have to declare the dependencies.
+There are two versions of the `Commits` service, one implemented as a class (`app/services/commits-class.js`) and the other just as a function (`app/services/commits-proto.js`).
 
 # Directives
 
-There are two versions of the same directive, `github-commits-class` and `github-commits-proto`.
+There are two versions of the `githubCommits` directive, one implemented as a class (`app/components/github-commits-class.js`) and the other just as a function (`app/components/github-commits-proto.js`).

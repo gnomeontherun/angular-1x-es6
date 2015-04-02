@@ -1,6 +1,6 @@
 'use strict';
 
-class Commits {
+class CommitsClass {
   constructor($http) {
     this.url = 'https://api.github.com/repos/angular/angular/commits';
     this.$http = $http;
@@ -11,10 +11,10 @@ class Commits {
   }
 
   static factory($http) {
-    return new Commits($http);
+    return new CommitsClass($http);
   }
 }
 
-Commits.factory.$inject = ['$http'];
+CommitsClass.factory.$inject = ['$http'];
 
-export { Commits };
+export { CommitsClass };
